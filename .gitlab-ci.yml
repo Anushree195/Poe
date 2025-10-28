@@ -1,0 +1,15 @@
+image openjdk17-jdk
+
+stages
+  - build
+  - test
+
+build-job
+  stage build
+  script
+    - javac HelloWorld.java
+
+test-job
+  stage test
+  script
+    - java HelloWorld
